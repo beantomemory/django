@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>upimg</title>
+</head>
+<body>
+    <form action="{% url "upimg" %}" method="post">
+        {% csrf_token %}
+
+        <input type="file" name="picc" id="picc">
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
